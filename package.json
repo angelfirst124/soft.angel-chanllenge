@@ -4,7 +4,7 @@
   "private": true,
   "author": {
     "name": "Denis Nishikawa",
-    "email": "denishikawa@gmail.com"
+    "email": "denishikawa1226@gmail.com"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -69,8 +69,6 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "graphql": "^15.7.1",
-    "graphql-cli": "4.1.0",
-    "relay-compiler": "^12.0.0",
-    "relay-compiler-language-typescript": "^14.2.1"
+    "graphql-cli": "4.1.0"
   }
 }
