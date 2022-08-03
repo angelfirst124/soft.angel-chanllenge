@@ -7,7 +7,7 @@ describe('OnPoint E2E Test', () => {
     cy.get('.app-bar-menu-item-home').should('have.length', 1);
     cy.get('.app-bar-menu-item-location').should('have.length', 1);
     cy.get('.app-bar-menu-item-episode').should('have.length', 1);
-    cy.get('.ant-table-filter-trigger').should('have.length', 5);
+    cy.get('.ant-table-filter-trigger').should('have.length', 3);
     cy.get('.ant-avatar-image').first().click();
     cy.wait(2000);
     cy.get('.ant-modal-close-x').click();
