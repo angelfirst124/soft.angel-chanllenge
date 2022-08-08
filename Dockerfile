@@ -2,9 +2,9 @@ FROM node:16.11
 
 WORKDIR /usr/src/app
 
-COPY / ./
+COPY package.json package-lock.json ./
 
-RUN npm install
+RUN yarn install
 
 RUN npm run build
 
