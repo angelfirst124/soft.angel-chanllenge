@@ -29,13 +29,13 @@ const LocationModal : React.FC<IModal> = (props: IModal) => {
           style={{ width: 240, marginLeft: 110 }}
         >
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Name"
+            className="ant-card-item"
             description={response.location.name}
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Created"
+            className="ant-card-item"
             description={
               response.location.created
                 ? `${moment(response.location.created).fromNow(true)} ago`
@@ -43,8 +43,8 @@ const LocationModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Dimension"
+            className="ant-card-item"
             description={
               response.location.dimension
                 ? `${response.location.dimension}`
@@ -52,8 +52,8 @@ const LocationModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Species"
+            className="ant-card-item"
             description={
               response.location.species
                 ? `${response.location.species}`
@@ -61,8 +61,8 @@ const LocationModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Type"
+            className="ant-card-item"
             description={
               response.location.type
                 ? `${response.location.type}`

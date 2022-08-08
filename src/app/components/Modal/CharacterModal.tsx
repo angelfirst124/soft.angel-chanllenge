@@ -34,13 +34,13 @@ const CharacterModal : React.FC<IModal> = (props: IModal) => {
           cover={<img alt="example" src={response.character.image} className="modal-image" />}
         >
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Name"
+            className="ant-card-item"
             description={response.character.name}
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Joined"
+            className="ant-card-item"
             description={
               response.character.created
                 ? `${moment(response.character.created).fromNow(true)} ago`
@@ -48,8 +48,8 @@ const CharacterModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Gender"
+            className="ant-card-item"
             description={
               response.character.gender
                 ? `${response.character.gender}`
@@ -57,8 +57,8 @@ const CharacterModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Species"
+            className="ant-card-item"
             description={
               response.character.species
                 ? `${response.character.species}`
@@ -66,8 +66,8 @@ const CharacterModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Status"
+            className="ant-card-item"
             description={
               response.character.status
                 ? `${response.character.status}`
@@ -75,8 +75,8 @@ const CharacterModal : React.FC<IModal> = (props: IModal) => {
             }
           />
           <Card.Meta
-            style={{ marginBottom: '15px' }}
             title="Type"
+            className="ant-card-item"
             description={
               response.character.type
                 ? `${response.character.type}`
