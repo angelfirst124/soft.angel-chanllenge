@@ -13,12 +13,17 @@ const Dashboard: React.FC = () => {
     current: 1,
     pageSize: 20,
   });
-  const { loading: moreLoading, data: pageData } = useQuery(CHARACTERSQUERY, {
+
+  const { loading: moreLoading, error, data: pageData } = useQuery(CHARACTERSQUERY, {
     variables: {
       page: pagination.current,
       filter,
     },
   });
+
+  if (error) {
+    console.log(error.message);
+  }
 
   useEffect(() => {
     if (pageData?.characters?.results?.length > 0) {

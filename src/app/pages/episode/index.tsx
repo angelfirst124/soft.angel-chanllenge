@@ -12,12 +12,17 @@ const Episode: React.FC = () => {
     current: 1,
     pageSize: 20,
   });
-  const { loading: moreLoading, data: pageData } = useQuery(EPISODESQUERY, {
+
+  const { loading: moreLoading, error, data: pageData } = useQuery(EPISODESQUERY, {
     variables: {
       page: pagination.current,
       filter,
     },
   });
+
+  if (error) {
+    console.log(error.message);
+  }
 
   useEffect(() => {
     if (pageData?.episodes?.results?.length > 0) {

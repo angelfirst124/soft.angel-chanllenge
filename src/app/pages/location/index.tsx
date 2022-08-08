@@ -12,12 +12,16 @@ const Location: React.FC = () => {
     current: 1,
     pageSize: 20,
   });
-  const { loading: moreLoading, data: pageData } = useQuery(LOCATIONSQUERY, {
+  const { loading: moreLoading, error, data: pageData } = useQuery(LOCATIONSQUERY, {
     variables: {
       page: pagination.current,
       filter,
     },
   });
+
+  if (error) {
+    console.log(error.message);
+  }
 
   useEffect(() => {
     if (pageData?.locations?.results?.length > 0) {
