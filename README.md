@@ -1,10 +1,5 @@
 # AngelSoft Frontend Assignment
 
-## Author
-
-### Name: Denis Nishikawa
-### Email: denishikawa1226@gmail.com
-
 ## Description
 
 Created by using [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with following libraries including:
